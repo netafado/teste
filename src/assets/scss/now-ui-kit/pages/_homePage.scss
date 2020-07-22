@@ -1,0 +1,16 @@
+.mainBanner{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    .item-texto{
+        width: 42%;
+    }
+    .item-img{
+        padding-left: 140px;
+        img{
+            max-width: 800px;
+            margin-top: 40px;
+        }
+    }
+}
