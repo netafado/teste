@@ -17,7 +17,7 @@ function IndexHeader() {
           <Container fluid className="pb-5">
             <Row className="align-self-center justify-content-center">
               <Col lg={6} xl={4} className="align-self-center order-2 order-lg-1">
-                  <h1 className="text-primary bold">conectando empreendedores.</h1>
+                  <h1 className="text-primary bold title">conectando empreendedores.</h1>
                   <p  className="text-black-50 ">O <strong>Achei Fornecedor</strong> é uma plataforma de negócios voltada para o público B2B (Business-to-Business), 
                   onde empreendedores de todos os setores encontram os melhores Fornecedores de produtos e serviços para o seu negócio.</p>
                   <Button className="btn-round btn-lg">Cadastra-se</Button>
@@ -28,6 +28,12 @@ function IndexHeader() {
               </Col>
             </Row>
           </Container>        
+        </div>
+        <div className="position-absolute redeSociais d-none d-lg-block">
+            <a href=""><img src={require("../../assets/img/facebook.svg")} className="m-1" /></a>
+            <a href=""><img src={require("../../assets/img/twitter.svg")} className="m-1" /></a>
+            <a href=""><img src={require("../../assets/img/linkdin.svg")} className="m-1" /></a>
+            <a href=""><img src={require("../../assets/img/pinterest.svg")} className="m-1" /></a>
         </div>
       </div>
     </>

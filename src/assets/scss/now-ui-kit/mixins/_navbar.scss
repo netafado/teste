@@ -8,7 +8,7 @@
             margin-top: 53px;
             position: relative;
         	  max-height: calc(100vh - 75px);
-        	  min-height: 100%;
+        	  //min-height: 100%;
         	  overflow: auto;
 
             &.navbar-logo{
@@ -181,10 +181,11 @@
         top: 0;
         height: 100% !important;
         width: 300px;
+
         right: 0;
         z-index: 1032;
         visibility: visible;
-        background-color: #999;
+        background-color:$primary-color;
         overflow-y: visible;
         border-top: none;
         text-align: left;
@@ -195,11 +196,11 @@
         @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
         &:before{
-            background: $brand-primary; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient($brand-primary 0%, #000 80%); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient($brand-primary 0%, #000 80%); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient($brand-primary 0%, #000 80%); /* For Firefox 3.6 to 15 */
-            background: linear-gradient($brand-primary 0%, #000 80%); /* Standard syntax (must be last) */
+            background: $primary-color; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient($brand-primary 0%, #092741 80%); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient($brand-primary 0%, rgb(129, 70, 70) 80%); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient($brand-primary 0%, #092741 80%); /* For Firefox 3.6 to 15 */
+            background: linear-gradient($brand-primary 0%, #092741 80%); /* Standard syntax (must be last) */
             @include opacity(.76);
 
             display: block;

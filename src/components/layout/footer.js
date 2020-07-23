@@ -11,19 +11,21 @@ function DarkFooter() {
         <Row>
         <img className="m-auto" src={require("../../assets/img/logo.svg")} />
         </Row>
+        <Row className="justify-content-center mt-2 mb-2">
+            <a href=""><img src={require("../../assets/img/facebook.svg")} className="m-1" /></a>
+            <a href=""><img src={require("../../assets/img/twitter.svg")} className="m-1" /></a>
+            <a href=""><img src={require("../../assets/img/linkdin.svg")} className="m-1" /></a>
+            <a href=""><img src={require("../../assets/img/pinterest.svg")} className="m-1" /></a>
+        </Row>
         <Row>
-        
-          <div className="copyright text-center m-auto" id="copyright">
+
+          <div className="copyright text-center m-auto text-black-50" id="copyright">
             
-            © {new Date().getFullYear()}, Designed by{" "}
-            <a
-              href="https://www.invisionapp.com?ref=nukr-dark-footer"
-              target="_blank"
-            >
-            </a>
+            Designed by{" "}
             <a
               href="https://isaiasfrancisco.com.br"
               target="_blank"
+              className="text-black-50"
             >
               Isaias Francisco dos Santos
             </a>

@@ -14,3 +14,26 @@
         }
     }
 }
+
+.main{
+    overflow: hidden;
+}
+
+.moeda{
+    background-size: contain;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    height: 140px;
+    width: 140px;
+}
+
+.redeSociais{
+    left: 20px;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 538px){
+    h1.title{
+        font-size: 1.8rem;
+    }
+}

@@ -46,3 +46,10 @@
         content: " ";
     }
 }
+
+@media screen and (max-width: 778px){
+    .footer{
+        background-position: bottom left, bottom right;
+        background-size: 100px, 100px;
+    }
+}

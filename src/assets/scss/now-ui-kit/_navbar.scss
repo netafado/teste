@@ -9,11 +9,12 @@
         vertical-align: middle;
 
         &:not(.btn):not(.dropdown-item){
-            color: $white-color;
+            color: $black-hr;
         }
     }
 
     p{
+
         display: inline-block;
         margin: 0;
         line-height: 21px;
@@ -141,9 +142,11 @@
         background-color: $transparent-bg !important;
         box-shadow: none;
         color: $white-color;
-        padding-top: 20px !important;
+        padding-top: 0;
     }
-
+    .nav-link.active{
+        font-weight: bolder;
+    }
     &.bg-white:not(.navbar-transparent){
         a:not(.dropdown-item):not(.btn){
             color: $default-color;

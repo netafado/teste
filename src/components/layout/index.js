@@ -13,7 +13,7 @@ import Footer from "./footer";
 function Index(props) {;
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <div className="wrapper">
         <div className="main">
           { props.children }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink as NavLinkRouter } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -16,6 +16,7 @@ import {
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
+
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
@@ -78,41 +79,39 @@ function IndexNavbar() {
             isOpen={collapseOpen}
             navbar
           >
-            <Nav navbar>
+            <Nav  
+              onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+              navbar className="mr-auto">
+              <NavItem className="ml-0 ml-lg-4">
+                  <NavLinkRouter className="nav-link" to="/">Home</NavLinkRouter>
+              </NavItem>
+
+              <NavItem>
+                  <NavLinkRouter className="nav-link" to="/sobre">Sobre</NavLinkRouter>
+              </NavItem>
+
+              <NavItem>
+                  <NavLinkRouter className="nav-link" to="/preco">Preço</NavLinkRouter>
+              </NavItem>
+
+
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href=""
                   onClick={(e) => {
 
                   }}
                 >
-                  <p>Sobre</p>
+                  <p>Contato</p>
                 </NavLink>
               </NavItem>
 
-              <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={(e) => {
 
-                  }}
-                >
-                  <p>Sobre</p>
-                </NavLink>
-              </NavItem>
+            </Nav>
 
-              <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={(e) => {
+            <Nav navbar >
 
-                  }}
-                >
-                  <p>Sobre</p>
-                </NavLink>
-              </NavItem>
-
-              <NavItem>
+            <NavItem>
                 <Button
                   className="nav-link btn-neutral btn-round"
                   color="info"
@@ -132,10 +131,7 @@ function IndexNavbar() {
                   <p className="text-primary">Cadastro</p>
                 </Button>
               </NavItem>
-
-
-
-            </Nav>
+              </Nav>
           </Collapse>
         </Container>
       </Navbar>
